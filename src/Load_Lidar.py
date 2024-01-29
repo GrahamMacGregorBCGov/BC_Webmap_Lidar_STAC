@@ -47,4 +47,4 @@ def find_laz(file_loc, mapsheet_tiles):
         # break
     return file_list
 
-find_laz(aoi_loc_2018, aoi_tiles)
+find_laz(aoi_loc_2018, aoi_tiles) 
