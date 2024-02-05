@@ -9,17 +9,19 @@
 import os
 import pathlib
 import glob
-import NRUtil.NRObjStoreUtil
+import NRUtil.NRObjStoreUtil as NRObjStoreUtil
 import logging
+import boto3
 
 logging.basicConfig(level=logging.DEBUG)
 logger=logging.debug
 
 # Omit variables
 # +-------------------------------------------------------------------------------------------------
-laz_loc='laz location'
-
-
+laz_loc=r'Pointclouds'
+bucket=r''
+secret_key=r''
+user_id=r''
 
 
 # Variables
@@ -27,6 +29,7 @@ laz_loc='laz location'
 aoi_loc=os.path.join(laz_loc,'092','092o')
 aoi_loc_2018=os.path.join(aoi_loc,'2018','pointcloud')
 aoi_tiles= ['92o_009','92o_018','92o_019', '92o_028', '92o_029']
+ostore = NRObjStoreUtil.ObjectStoreUtil(r'nrs.objectstore.gov.bc.ca', bucket, secret_key, user_id )
 
 
 # find laz files 
@@ -47,4 +50,18 @@ def find_laz(file_loc, mapsheet_tiles):
         # break
     return file_list
 
-find_laz(aoi_loc_2018, aoi_tiles) 
+#function to move list of files to S3 storage from local WSL
+def move_to_s3 (laz_dir):
+    #list file in dir
+    laz_files=os.listdir(laz_dir)
+    logger(laz_files)
+    #create output name/path and move to s3 bucket?
+    for file in laz_files:
+        dest_file_path=f"/Pointclouds/{file}"
+        in_path= f"{laz_dir}/{file}"
+        ostore.put_object(local_path=in_path, ostore_path=dest_file_path)
+    logging.info(f"{len(laz_dir)} files moved to S3 bucket")
+
+# find_laz(aoi_loc_2018, aoi_tiles) 
+
+move_to_s3(laz_loc)
