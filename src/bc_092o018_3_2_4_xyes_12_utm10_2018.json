@@ -1,0 +1,410 @@
+{
+  "assets": {
+    "data": {
+      "href": "/mnt/w_drive/srm/nel/Local/Geomatics/Workarea/cfolkers/2024/STAC_LiDAR/bc_092o018_3_2_4_xyes_12_utm10_2018.laz"
+    }
+  },
+  "bbox": [
+    534334.63,
+    5669020.5,
+    1905.36,
+    534954.4,
+    5669405.99,
+    2019.11
+  ],
+  "geometry": {
+    "coordinates": [
+      [
+        [
+          534663.46359143,
+          5669001.52129675
+        ],
+        [
+          534694.00443974,
+          5669024.19199718
+        ],
+        [
+          534715.81933139,
+          5669016.63509703
+        ],
+        [
+          534759.44911468,
+          5669046.8626976
+        ],
+        [
+          534781.26400633,
+          5669039.30579746
+        ],
+        [
+          534824.89378963,
+          5669069.53339802
+        ],
+        [
+          534846.70868128,
+          5669061.97649788
+        ],
+        [
+          534890.33846458,
+          5669092.20409845
+        ],
+        [
+          534912.15335622,
+          5669084.6471983
+        ],
+        [
+          534964.50909618,
+          5669114.87479887
+        ],
+        [
+          534964.50909618,
+          5669417.15080452
+        ],
+        [
+          534432.22573996,
+          5669417.15080452
+        ],
+        [
+          534392.95893499,
+          5669394.4801041
+        ],
+        [
+          534362.41808668,
+          5669341.58180311
+        ],
+        [
+          534366.78106501,
+          5669318.91110268
+        ],
+        [
+          534323.15128171,
+          5669258.45590155
+        ],
+        [
+          534327.51426004,
+          5669205.55760057
+        ],
+        [
+          534362.41808668,
+          5669190.44380028
+        ],
+        [
+          534366.78106501,
+          5669167.77309986
+        ],
+        [
+          534406.04786998,
+          5669145.10239943
+        ],
+        [
+          534427.86276163,
+          5669152.65929958
+        ],
+        [
+          534497.6704149,
+          5669016.63509703
+        ],
+        [
+          534637.28572145,
+          5669016.63509703
+        ],
+        [
+          534663.46359143,
+          5669001.52129675
+        ]
+      ]
+    ],
+    "type": "Polygon"
+  },
+  "id": "bc_092o018_3_2_4_xyes_12_utm10_2018.laz",
+  "links": [
+    {
+      "href": "./example-autzen.json",
+      "rel": "self"
+    },
+    {
+      "href": "https://github.com/PDAL/data/blob/master/LICENSE",
+      "rel": "license"
+    }
+  ],
+  "properties": {
+    "datetime": "2019-03-21T00:00:00Z",
+    "pc:count": 4177768,
+    "pc:density": 0.1556917068,
+    "pc:schemas": [
+      {
+        "name": "X",
+        "size": 8,
+        "type": "floating"
+      },
+      {
+        "name": "Y",
+        "size": 8,
+        "type": "floating"
+      },
+      {
+        "name": "Z",
+        "size": 8,
+        "type": "floating"
+      },
+      {
+        "name": "Intensity",
+        "size": 2,
+        "type": "unsigned"
+      },
+      {
+        "name": "ReturnNumber",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "NumberOfReturns",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "ScanDirectionFlag",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "EdgeOfFlightLine",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "Classification",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "Synthetic",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "KeyPoint",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "Withheld",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "Overlap",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "ScanAngleRank",
+        "size": 4,
+        "type": "floating"
+      },
+      {
+        "name": "UserData",
+        "size": 1,
+        "type": "unsigned"
+      },
+      {
+        "name": "PointSourceId",
+        "size": 2,
+        "type": "unsigned"
+      },
+      {
+        "name": "GpsTime",
+        "size": 8,
+        "type": "floating"
+      }
+    ],
+    "pc:statistics": [
+      {
+        "average": 534688.136,
+        "count": 4177768,
+        "maximum": 534954.4,
+        "minimum": 534334.63,
+        "name": "X",
+        "position": 0,
+        "stddev": 159.4866047,
+        "variance": 25435.97708
+      },
+      {
+        "average": 5669237.114,
+        "count": 4177768,
+        "maximum": 5669405.99,
+        "minimum": 5669020.5,
+        "name": "Y",
+        "position": 1,
+        "stddev": 98.73787646,
+        "variance": 9749.168248
+      },
+      {
+        "average": 1955.934494,
+        "count": 4177768,
+        "maximum": 2019.11,
+        "minimum": 1905.36,
+        "name": "Z",
+        "position": 2,
+        "stddev": 25.23492333,
+        "variance": 636.8013555
+      },
+      {
+        "average": 20407.28053,
+        "count": 4177768,
+        "maximum": 58020,
+        "minimum": 0,
+        "name": "Intensity",
+        "position": 3,
+        "stddev": 17246.02207,
+        "variance": 297425277.3
+      },
+      {
+        "average": 1.824191291,
+        "count": 4177768,
+        "maximum": 7,
+        "minimum": 1,
+        "name": "ReturnNumber",
+        "position": 4,
+        "stddev": 1.03096671,
+        "variance": 1.062892357
+      },
+      {
+        "average": 2.648867051,
+        "count": 4177768,
+        "maximum": 7,
+        "minimum": 1,
+        "name": "NumberOfReturns",
+        "position": 5,
+        "stddev": 1.297078208,
+        "variance": 1.682411876
+      },
+      {
+        "average": 0,
+        "count": 4177768,
+        "maximum": 0,
+        "minimum": 0,
+        "name": "ScanDirectionFlag",
+        "position": 6,
+        "stddev": 0,
+        "variance": 0
+      },
+      {
+        "average": 0.000301117726,
+        "count": 4177768,
+        "maximum": 1,
+        "minimum": 0,
+        "name": "EdgeOfFlightLine",
+        "position": 7,
+        "stddev": 0.01735013332,
+        "variance": 0.0003010271262
+      },
+      {
+        "average": 1.930744359,
+        "count": 4177768,
+        "maximum": 7,
+        "minimum": 1,
+        "name": "Classification",
+        "position": 8,
+        "stddev": 1.279988643,
+        "variance": 1.638370926
+      },
+      {
+        "average": -0.3898631997,
+        "count": 4177768,
+        "maximum": 30,
+        "minimum": -30,
+        "name": "ScanAngleRank",
+        "position": 9,
+        "stddev": 15.61358649,
+        "variance": 243.784083
+      },
+      {
+        "average": 1,
+        "count": 4177768,
+        "maximum": 1,
+        "minimum": 1,
+        "name": "UserData",
+        "position": 10,
+        "stddev": 0,
+        "variance": 0
+      },
+      {
+        "average": 1152.985397,
+        "count": 4177768,
+        "maximum": 1156,
+        "minimum": 1151,
+        "name": "PointSourceId",
+        "position": 11,
+        "stddev": 1.475103264,
+        "variance": 2.175929639
+      },
+      {
+        "average": 220206029.1,
+        "count": 4177768,
+        "maximum": 220206892.6,
+        "minimum": 220205446.3,
+        "name": "GpsTime",
+        "position": 12,
+        "stddev": 439.5508648,
+        "variance": 193204.9628
+      },
+      {
+        "average": 0,
+        "count": 4177768,
+        "maximum": 0,
+        "minimum": 0,
+        "name": "Synthetic",
+        "position": 13,
+        "stddev": 0,
+        "variance": 0
+      },
+      {
+        "average": 0,
+        "count": 4177768,
+        "maximum": 0,
+        "minimum": 0,
+        "name": "KeyPoint",
+        "position": 14,
+        "stddev": 0,
+        "variance": 0
+      },
+      {
+        "average": 0,
+        "count": 4177768,
+        "maximum": 0,
+        "minimum": 0,
+        "name": "Withheld",
+        "position": 15,
+        "stddev": 0,
+        "variance": 0
+      },
+      {
+        "average": 0,
+        "count": 4177768,
+        "maximum": 0,
+        "minimum": 0,
+        "name": "Overlap",
+        "position": 16,
+        "stddev": 0,
+        "variance": 0
+      }
+    ],
+    "pc:type": "lidar",
+    "providers": [
+      {
+        "description": "LidarBC is an initiative to provide open public access to Light Detection and Ranging data (LiDAR) and associated datasets collected by the Government of British Columbia.",
+        "name": "LidarBC",
+        "roles": [
+          "producer"
+        ],
+        "url": "https://lidar.gov.bc.ca/"
+      }
+    ],
+    "title": "LiDAR BC"
+  },
+  "stac_extensions": [
+    "https://stac-extensions.github.io/pointcloud/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0",
+  "type": "Feature"
+}
