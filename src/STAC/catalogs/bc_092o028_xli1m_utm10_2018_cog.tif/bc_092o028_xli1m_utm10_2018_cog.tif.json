@@ -1,0 +1,65 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "bc_092o028_xli1m_utm10_2018_cog.tif",
+  "properties": {
+    "datetime": "2024-05-06T20:12:32.082102Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          535246.0,
+          5672186.0
+        ],
+        [
+          535246.0,
+          5678033.0
+        ],
+        [
+          541921.0,
+          5678033.0
+        ],
+        [
+          541921.0,
+          5672186.0
+        ],
+        [
+          535246.0,
+          5672186.0
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "/home/cfolkers/STAC_LiDAR/BC_Webmap_Lidar_STAC/src/STAC/catalogs/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "/home/cfolkers/STAC_LiDAR/BC_Webmap_Lidar_STAC/src/STAC/catalogs/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "/home/cfolkers/STAC_LiDAR/BC_Webmap_Lidar_STAC/src/STAC/catalogs/bc_092o028_xli1m_utm10_2018_cog.tif/bc_092o028_xli1m_utm10_2018_cog.tif.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "bc_092o028_xli1m_utm10_2018_cog.tif": {
+      "href": "../dem/bc_092o028_xli1m_utm10_2018_cog.tif/STAC_LiDAR/DEM/bc_092o029_xli1m_utm10_2019_cog.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    }
+  },
+  "bbox": [
+    535246.0,
+    5672186.0,
+    541921.0,
+    5678033.0
+  ],
+  "stac_extensions": []
+}
