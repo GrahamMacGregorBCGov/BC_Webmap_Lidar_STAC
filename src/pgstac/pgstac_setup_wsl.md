@@ -72,6 +72,7 @@ Install pgstac using the `pypgstac` package. Make sure you have `mamba` or `cond
 ```sh
 mamba activate stac_tools
 python -m pip install pypgstac[psycopg]
+python -m pip install pypgstac migrate
 ```
 
 ## Step 6: Configure Environment Variables
