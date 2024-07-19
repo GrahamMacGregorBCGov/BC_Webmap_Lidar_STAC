@@ -87,6 +87,15 @@ export PGDATABASE=stac_test
 export PGPASSWORD=yourpassword
 ```
 
+If you didn't setup password for your default username/password, you might get a error message when you run pypgstc migrate
+
+try this:
+```sh
+sudo -u postgres psql postgres
+\password postgres
+Enter new passowrd:
+```
+
 ## Step 7: Migrate pgstac
 
 Run the `pypgstac migrate` command to set up the pgstac schema:
@@ -128,7 +137,12 @@ Open the `postgresql.conf` file in WSL:
 ```sh
 sudo nano /etc/postgresql/13/main/postgresql.conf
 ```
+it can be /etc/postgresql/14/main/postgresql.conf
+check your directory
 
+
+
+use control+W
 Find the line `listen_addresses`, uncomment it, and set it to listen on all addresses:
 
 ```plaintext
