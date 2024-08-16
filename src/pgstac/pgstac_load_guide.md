@@ -7,8 +7,8 @@ This guide details how to bulk load STAC JSON data into a pgstac PostgreSQL data
 
 - Use the `create_ndjson.ipynb` script to generate NDJSON files for all items.
 - The script extracts JSON data from the specified location. The catalog line must be removed, and the collection line should be saved to a separate JSON file.
-- Move the combined `item.ndjson` and the collection JSON file to another directory for easy access later.
-<br>**the create_ndjson notebook should be modified to only compile the items and not the collection and catalog 
+- Move the combined `item.ndjson` and the collection JSON file to another directory for easy access later.<br>
+<br>**the create_ndjson notebook should be modified to only compile the items and not the collection and catalog** 
 ### Example NDJSON 
 
 The resulting NDJSON for the items might look like this, with one:
