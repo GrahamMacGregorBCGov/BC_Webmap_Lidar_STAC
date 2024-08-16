@@ -72,6 +72,7 @@ Install pgstac using the `pypgstac` package. Make sure you have `mamba` or `cond
 ```sh
 mamba activate stac_tools
 python -m pip install pypgstac[psycopg]
+python -m pip install pypgstac migrate
 ```
 
 ## Step 6: Configure Environment Variables
@@ -84,6 +85,15 @@ export PGPORT=5432
 export PGUSER=postgres
 export PGDATABASE=PgstackDB
 export PGPASSWORD=yourpassword
+```
+
+If you didn't setup password for your default username/password, you might get a error message when you run pypgstc migrate
+
+try this:
+```sh
+sudo -u postgres psql postgres
+\password postgres
+Enter new passowrd:
 ```
 
 ## Step 7: Migrate pgstac
@@ -127,7 +137,12 @@ Open the `postgresql.conf` file in WSL:
 ```sh
 sudo nano /etc/postgresql/13/main/postgresql.conf
 ```
+it can be /etc/postgresql/14/main/postgresql.conf
+check your directory
 
+
+
+use control+W
 Find the line `listen_addresses`, uncomment it, and set it to listen on all addresses:
 
 ```plaintext
