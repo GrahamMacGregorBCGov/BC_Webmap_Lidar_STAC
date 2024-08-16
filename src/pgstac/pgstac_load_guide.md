@@ -60,7 +60,8 @@ The collection JSON might look like this:
 ## 2. Setting Up the PostgreSQL Database
 
 - if you do not have a postgres database with the pgstac extension enabled you will need to create a new database named `PgstacDB` since it's specified in the [pgstac source code](https://github.com/stac-utils/pgstac/blob/main/src/pypgstac/python/pypgstac/load.py#L150).
-- Change the password for the `pgstac_admin` user to a new password:
+- Directions on setting the PgstacDB can be found here: [pgstac setup wsl](https://github.com/GrahamMacGregorBCGov/BC_Webmap_Lidar_STAC/blob/main/src/pgstac/pgstac_setup_wsl.md)
+- if you do not know the password for the `pgstac_admin` user, change it to a new password:
   ```sql
   ALTER USER pgstac_admin WITH PASSWORD 'new_password';
   ```
