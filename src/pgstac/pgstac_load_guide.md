@@ -81,9 +81,9 @@ The collection JSON might look like this:
    psql -h localhost -p 5432 -U pgstac_admin -d PgstacDB
    ```
 4. once verified database works exit the database: 
-  ``` bash
-  \q
-  ```
+   ``` bash
+      \q
+   ```
 
 ### Setting Environment Variables
 
