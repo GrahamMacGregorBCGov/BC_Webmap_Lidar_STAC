@@ -42,8 +42,8 @@ Switch to the PostgreSQL user and create a new database:
 
 ```sh
 sudo -i -u postgres
-createdb stac_test
-psql stac_test
+createdb PgstackDB
+psql PgstackDB
 ```
 
 Within the PostgreSQL shell, enable the required extensions:
@@ -83,7 +83,7 @@ Set the necessary PostgreSQL environment variables:
 export PGHOST=localhost
 export PGPORT=5432
 export PGUSER=postgres
-export PGDATABASE=stac_test
+export PGDATABASE=PgstackDB
 export PGPASSWORD=yourpassword
 ```
 
@@ -111,7 +111,7 @@ This command should return the version number, confirming the migration.
 Connect to the PostgreSQL database and verify the schemas:
 
 ```sh
-psql -U postgres -d stac_test
+psql -U postgres -d PgstackDB
 \dn
 ```
 
