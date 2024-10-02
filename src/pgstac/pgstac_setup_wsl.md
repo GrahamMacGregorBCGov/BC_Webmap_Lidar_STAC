@@ -222,3 +222,4 @@ Click "Save" to create the connection.
 ## Conclusion
 
 Your pgstac setup on WSL should now be complete, and you should be able to connect to the PostgreSQL database using pgAdmin on Windows. You can start using the database for your spatial and temporal asset catalog (STAC) requirements.
+
