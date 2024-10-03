@@ -1,33 +1,33 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
-  "id": "bc_092o030_xli1m_utm10_2018_cog",
+  "id": "bc_092o029_xli1m_utm10_2019_cog",
   "properties": {
-    "datetime": "2024-07-04T15:43:23.544498Z"
+    "datetime": "2024-10-03T16:48:52.560661Z"
   },
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
         [
-          555803.0,
-          5672369.0
+          -122.3919185364277,
+          51.19995747892008
         ],
         [
-          555803.0,
-          5681181.0
+          -122.3919185364277,
+          51.299990207764836
         ],
         [
-          559397.0,
-          5681181.0
+          -122.19825747229271,
+          51.299990207764836
         ],
         [
-          559397.0,
-          5672369.0
+          -122.19825747229271,
+          51.19995747892008
         ],
         [
-          555803.0,
-          5672369.0
+          -122.3919185364277,
+          51.19995747892008
         ]
       ]
     ]
@@ -51,16 +51,16 @@
     }
   ],
   "assets": {
-    "bc_092o030_xli1m_utm10_2018_cog": {
-      "href": "https://nrs.objectstore.gov.bc.ca/cloudgistest/STAC_DEM/Data/bc_092o030_xli1m_utm10_2018_cog.tif",
+    "bc_092o029_xli1m_utm10_2019_cog": {
+      "href": "https://nrs.objectstore.gov.bc.ca/cloudgistest/STAC_DEM/Data/bc_092o029_xli1m_utm10_2019_cog.tif",
       "type": "image/tiff; application=geotiff; profile=cloud-optimized"
     }
   },
   "bbox": [
-    555803.0,
-    5672369.0,
-    559397.0,
-    5681181.0
+    -122.3919185364277,
+    51.19995747892008,
+    -122.19825747229271,
+    51.299990207764836
   ],
   "stac_extensions": [],
   "collection": "COG-DEM-Test"
